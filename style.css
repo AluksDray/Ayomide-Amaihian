@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.screen{
+    background-color: black;
+    color: #ffffff;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container-main{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 1rem;
+    background-color: #ffffff;
+    color: black;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+}
+
+.txt p{
+    width: 100%;
+    height: auto;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+.picture{
+    width: 50%;
+    height: 30rem;
+}
+.picture img{
+    width: 100%;
+    height: 30rem;
+    border-radius: 1rem;
+}
+.mine{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.2rem;
+}
+.mine img{
+    width: 45px;
+    height: 45px;
+    border-radius: 20rem;
+    border: 1.5px solid rgb(25, 24, 24);
+    position: absolute;
+    bottom: 2rem;
+    left: 50rem;
+    right: 0;
+}
+.mine p{
+    width: fit-content;
+    height: auto;
+    font-weight: 700;
+    position: absolute;
+    bottom: 2.6rem;
+    left: 53rem;
+    color: black;
+}
+
+@media (max-width : 480px){
+    .screen{
+        background-color: black;
+        color: #ffffff;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .container-main{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        row-gap: 1rem;
+        background-color: #ffffff;
+        color: black;
+        padding: 1rem 1rem 3rem 1rem;
+        border-radius: 1rem;
+    }
+
+    .picture{
+        width: 100%;
+        height: 30rem;
+    }
+    .picture img{
+        width: 100%;
+        height: 30rem;
+        border-radius: 1rem;
+    }
+
+    .mine img{
+        width: 35px;
+        height: 35px;
+        border-radius: 20rem;
+        border: 1.5px solid rgb(25, 24, 24);
+        position: absolute;
+        bottom: 1rem;
+        left: 12rem;
+        right: 0;
+    }
+    .mine p{
+        width: fit-content;
+        height: auto;
+        font-weight: 700;
+        position: absolute;
+        bottom: 1.5rem;
+        left: 14.5rem;
+        color: black;
+    }
+}
